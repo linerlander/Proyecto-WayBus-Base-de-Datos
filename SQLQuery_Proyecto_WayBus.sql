@@ -427,7 +427,8 @@ GO
 --CONSULTAS
 
 /*N° 1 Ventas totales por tipo de comprobante y mes
-Esta consulta muestra la suma total de ventas agrupadas por tipo de comprobante y mes. Es útil para entender cómo varían las ventas a lo largo del año por cada tipo de documento emitido */
+Esta consulta muestra la suma total de ventas agrupadas por tipo de comprobante y mes. 
+Es útil para entender cómo varían las ventas a lo largo del año por cada tipo de documento emitido */
 
 SELECT 
     MONTH(v.Fecha) AS Mes,
@@ -443,7 +444,8 @@ ORDER BY Año, Mes, Tipo_Comprobante;
 
 
 /*N° 2 Rutas con mayor número de ventas
-Esta consulta identifica las rutas con el mayor número de ventas registradas, ordenadas de mayor a menor. Es útil para determinar qué rutas son las más populares o más rentables */
+Esta consulta identifica las rutas con el mayor número de ventas registradas, 
+ordenadas de mayor a menor. Es útil para determinar qué rutas son las más populares o más rentables */
 
 SELECT 
     r.Origen,
@@ -457,7 +459,8 @@ ORDER BY Numero_Ventas DESC;
 
 
 /*N° 3 Vendedores con mejor desempeño por cantidad de ventas
-Esta consulta muestra los vendedores que han realizado más ventas en términos de cantidad de boletos vendidos y total recaudado. Es útil para identificar a los vendedores más productivos */
+Esta consulta muestra los vendedores que han realizado más ventas en términos de cantidad de boletos vendidos y total recaudado. 
+Es útil para identificar a los vendedores más productivos */
 
 SELECT 
     ve.Nombre,
@@ -472,8 +475,9 @@ GROUP BY ve.Nombre, ve.Apellido_Paterno, ve.Apellido_Materno
 ORDER BY Total_Recaudado DESC;
 
 
-/*N° 4 Clientes que más han gastado en boletos
-Esta consulta muestra los 5 clientes que mas han gastado más dinero en viajar, ordenados de mayor a menor. Es útil para identificar a los clientes más valiosos o frecuentes */
+/*N° 4 Clientes que más han gastado en viajar
+Esta consulta muestra los 5 clientes que mas han gastado más dinero en viajar, 
+ordenados de mayor a menor. Es útil para identificar a los clientes más valiosos o frecuentes */
 
 SELECT top(5) 
     cl.Nombre,
@@ -486,6 +490,7 @@ INNER JOIN Cliente cl
 ON v.Id_Cliente = cl.Id_Cliente
 GROUP BY cl.Nombre, cl.Apellido_P, cl.Apellido_M
 ORDER BY Total_Gastado DESC;
+
 
 
 SELECT 
@@ -640,3 +645,6 @@ GO
 SELECT *
 FROM Vista_Buses;
 go
+
+
+
