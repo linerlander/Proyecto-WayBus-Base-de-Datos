@@ -20,4 +20,4 @@
 <a id='sec_1'></a>
 ## `1. Planteamiento del problema`
 
-La empresa de transporte interprovincial WayBus necesita gestionar su información de manera efectiva. La base de datos de la empresa contiene datos sobre clientes, vendedores, autobuses, rutas, ventas, detalles de ventas, y tipos de comprobantes. Esta base de datos es crucial para el funcionamiento eficiente de la empresa, ya que permite el seguimiento de las ventas, la gestión de los autobuses y sus rutas, así como el control de los clientes y vendedores.
+🚍 WayBus, la empresa de transporte interprovincial, necesita gestionar su información de manera efectiva. 📊 La base de datos de la empresa contiene datos sobre clientes 👥, vendedores 💼, autobuses 🚌, rutas 📍, ventas 💰, detalles de ventas 📝, y tipos de comprobantes 🧾. Esta base de datos es crucial para el funcionamiento eficiente de la empresa, ya que permite el seguimiento de las ventas 📈, la gestión de los autobuses 🚍 y sus rutas 🗺️, así como el control de los clientes y vendedores. 🔄
